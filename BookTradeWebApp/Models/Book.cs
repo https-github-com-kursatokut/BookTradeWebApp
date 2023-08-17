@@ -1,4 +1,6 @@
 ﻿using System;
+
+
 namespace BookTradeWebApp.Models
 {
 	public class Book
