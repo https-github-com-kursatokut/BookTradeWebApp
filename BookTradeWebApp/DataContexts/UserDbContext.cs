@@ -9,13 +9,6 @@ namespace BookTradeWebApp.DataContexts
         public UserDbContext(DbContextOptions<UserDbContext> options)
        : base(options) { }
 
-        // Ayrı bir conection string belirtmesiyle de yapamadım 
-        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseNpgsql("Server=localhost;Port = 5432;Database=BookTradeWebAppDb;User Id=Postgres;Password=Mamy.5656");
-        }*/
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

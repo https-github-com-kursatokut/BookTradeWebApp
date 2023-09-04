@@ -13,7 +13,7 @@ namespace BookTradeWebApp.Controllers
     public class BookController : ControllerBase
     {
         private readonly UserDbContext _context;
-
+         
         public BookController(UserDbContext context)
         {
             _context = context;
@@ -41,6 +41,14 @@ namespace BookTradeWebApp.Controllers
         [HttpPost]
         public async Task<ActionResult<Book>> CreateBook(Book book)
         {
+            var newBook = new Book
+            {
+                Title = book.Title,
+                Author = book.Author,
+                ImageUrl = book.ImageUrl,
+                Status = book.Active,
+                CreatedAt = DateTime.Now
+            };
             _context.Books.Add(book);
             await _context.SaveChangesAsync();
 

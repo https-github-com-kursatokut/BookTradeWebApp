@@ -5,10 +5,13 @@ namespace BookTradeWebApp.Models
 {
 	public class Book
 	{
+        internal BookStatus Active;
+
         public int BookId { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
         public string ImageUrl { get; set; }
+        public int Price { get; set; }
         public BookStatus Status { get; set; }
         public DateTime CreatedAt { get; set; }
 
@@ -19,4 +22,3 @@ namespace BookTradeWebApp.Models
 
     }
 }
-

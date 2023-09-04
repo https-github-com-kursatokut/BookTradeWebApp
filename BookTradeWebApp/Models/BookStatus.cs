@@ -6,6 +6,7 @@ namespace BookTradeWebApp.Models
         Available,
         Traded,
         Reserved
+        
     }
 }
 

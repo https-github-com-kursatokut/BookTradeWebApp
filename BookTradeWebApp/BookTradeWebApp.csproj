@@ -33,10 +33,12 @@
     <None Remove="Models\" />
     <None Remove="DataContexts\" />
     <None Remove="Controllers\" />
+    <None Remove="DTO\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="DataContexts\" />
     <Folder Include="Controllers\" />
+    <Folder Include="DTO\" />
   </ItemGroup>
 </Project>

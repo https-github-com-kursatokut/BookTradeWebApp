@@ -42,6 +42,7 @@ namespace BookTradeWebApp.Migrations
                     Title = table.Column<string>(type: "text", nullable: false),
                     Author = table.Column<string>(type: "text", nullable: false),
                     ImageUrl = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<string>(type: "integer", nullable: false),
                     Status = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     OwnerUserId = table.Column<int>(type: "integer", nullable: false)
